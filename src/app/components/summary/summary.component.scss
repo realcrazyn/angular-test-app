@@ -1,0 +1,26 @@
+.card {
+  text-align: center;
+}
+
+.dec {
+  height: 40px;
+  width: 100%;
+  background-color: #ccc;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.cards_layout {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards_layout-card {
+  margin-top: 20px;
+  width: calc(100% / 2 - (10px));
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+<div class="container">
+  <a routerLink="/" class="transactions_link">
+    <button type="button" class="btn btn-primary">Home</button>
+  </a>
+  <h2>All transactions</h2>
+  <li *ngFor="let tranaction of transactions" class="transactions_items">
+    {{ "Name: " + tranaction.name.first + " " + tranaction.name.last }}
+    <br />
+    {{ " Payment: " + tranaction.amount }}
+    {{ "Payment type: " + tranaction.type }}
+  </li>
+</div>

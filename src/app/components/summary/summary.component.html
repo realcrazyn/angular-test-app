@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="dec"></div>
+  <div class="card-body">
+    <h5 class="card-title">Welcome</h5>
+    <p class="card-text">
+      With supporting text below as a naatural lead-in to additional content.
+    </p>
+    <a routerLink="/transactions">
+      <button type="button" class="btn btn-primary">See transactions</button></a
+    >
+  </div>
+  <div class="dec">You have {{ paymentsCount }} transactions</div>
+</div>
+
+<div class="cards_layout">
+  <app-summary-card
+    class="cards_layout-card"
+    *ngFor="let iterCard of paymentsType; let idx = index"
+    [card]="iterCard"
+    [index]="idx + 0"
+  ></app-summary-card>
+</div>

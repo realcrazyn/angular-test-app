@@ -1,0 +1,16 @@
+<div class="table">
+  <ul class="col">
+    <span>Name</span>
+    <li class="row" *ngFor="let payment of payments">
+      {{ payment.name.first }} {{ payment.name.last }}
+    </li>
+  </ul>
+  <ul class="col">
+    <span>Amount of money</span>
+    <li class="row" *ngFor="let payment of payments">{{ payment.amount }}</li>
+  </ul>
+  <ul class="col">
+    <span>Amount of transactions</span>
+    <li class="row" *ngFor="let payment of payments">{{ payment.count }}</li>
+  </ul>
+</div>

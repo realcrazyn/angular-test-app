@@ -1,0 +1,30 @@
+.card {
+  border: none;
+}
+
+.card_link {
+  padding: 40px;
+}
+
+.tab_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 0;
+
+  li {
+    width: (100%/4);
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid rgb(163, 163, 163);
+    font-weight: bold;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+  }
+}
+.active {
+  background-color: rgba(204, 204, 204, 0.5);
+}
